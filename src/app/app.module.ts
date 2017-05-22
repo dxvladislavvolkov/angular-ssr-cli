@@ -10,18 +10,9 @@ import {Subscription} from 'rxjs/Subscription';
 
 import {AppComponent} from './app.component';
 
-var callback = function() {
-    console.log("callback");
-}
-
-var loadedCallback = function() {
-    callback();
-    document.removeEventListener("DOMContentLoaded", loadedCallback)
-};
-document.addEventListener("DOMContentLoaded", loadedCallback)
-
 @NgModule({
   imports: [
+    DevExtremeModule,
     BrowserAnimationsModule,
     BrowserModule,
     CommonModule,
