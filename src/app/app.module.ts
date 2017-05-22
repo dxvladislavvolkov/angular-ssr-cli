@@ -10,9 +10,11 @@ import {Subscription} from 'rxjs/Subscription';
 
 import {AppComponent} from './app.component';
 
+var elem = document.getElementById("elem"),
+    rects = elem.getClientRects();
+
 @NgModule({
   imports: [
-    DevExtremeModule,
     BrowserAnimationsModule,
     BrowserModule,
     CommonModule,
